@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Welcome to Auth System</h1>
+    <div id="auth-container">
+        <div id="register-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" required><br>
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required><br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="secure-container" style="display: none;">
+        <h2>Secure Page</h2>
+        <p>Welcome</p>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
